@@ -1,0 +1,59 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.2.0, pluggy-1.7.0 -- D:\Santiago\Documents D\Metodologia de Sistemas II\TPI_metodologia\venv\Scripts\python.exe
+rootdir: D:\Santiago\Documents D\Metodologia de Sistemas II\TPI_metodologia
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0
+collecting ... collected 43 items
+
+tests/test_comportamiento.py::test_solicitar_turno_crea_turno_pendiente[estado-inicial] PASSED [  2%]
+tests/test_comportamiento.py::test_solicitar_turno_crea_turno_pendiente[refactorizado] PASSED [  4%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[estado-inicial-1-30] PASSED [  6%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[estado-inicial-2-20] PASSED [  9%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[estado-inicial-3-15] PASSED [ 11%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[estado-inicial-99-15] PASSED [ 13%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[refactorizado-1-30] PASSED [ 16%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[refactorizado-2-20] PASSED [ 18%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[refactorizado-3-15] PASSED [ 20%]
+tests/test_comportamiento.py::test_duracion_del_turno_depende_del_area[refactorizado-99-15] PASSED [ 23%]
+tests/test_comportamiento.py::test_los_ids_de_turno_son_correlativos[estado-inicial] PASSED [ 25%]
+tests/test_comportamiento.py::test_los_ids_de_turno_son_correlativos[refactorizado] PASSED [ 27%]
+tests/test_comportamiento.py::test_no_permite_dos_turnos_en_el_mismo_horario_y_area[estado-inicial] PASSED [ 30%]
+tests/test_comportamiento.py::test_no_permite_dos_turnos_en_el_mismo_horario_y_area[refactorizado] PASSED [ 32%]
+tests/test_comportamiento.py::test_permite_el_mismo_horario_en_otra_area[estado-inicial] PASSED [ 34%]
+tests/test_comportamiento.py::test_permite_el_mismo_horario_en_otra_area[refactorizado] PASSED [ 37%]
+tests/test_comportamiento.py::test_un_horario_cancelado_vuelve_a_estar_disponible[estado-inicial] PASSED [ 39%]
+tests/test_comportamiento.py::test_un_horario_cancelado_vuelve_a_estar_disponible[refactorizado] PASSED [ 41%]
+tests/test_comportamiento.py::test_el_ciudadano_se_registra_una_sola_vez[estado-inicial] PASSED [ 44%]
+tests/test_comportamiento.py::test_el_ciudadano_se_registra_una_sola_vez[refactorizado] PASSED [ 46%]
+tests/test_comportamiento.py::test_el_turno_queda_persistido_en_el_archivo[estado-inicial] PASSED [ 48%]
+tests/test_comportamiento.py::test_el_turno_queda_persistido_en_el_archivo[refactorizado] PASSED [ 51%]
+tests/test_comportamiento.py::test_solicitar_envia_notificacion_al_email_del_ciudadano[estado-inicial] PASSED [ 53%]
+tests/test_comportamiento.py::test_solicitar_envia_notificacion_al_email_del_ciudadano[refactorizado] PASSED [ 55%]
+tests/test_comportamiento.py::test_reasignar_cambia_la_fecha_del_turno[estado-inicial] PASSED [ 58%]
+tests/test_comportamiento.py::test_reasignar_cambia_la_fecha_del_turno[refactorizado] PASSED [ 60%]
+tests/test_comportamiento.py::test_reasignar_turno_inexistente_devuelve_404[estado-inicial] PASSED [ 62%]
+tests/test_comportamiento.py::test_reasignar_turno_inexistente_devuelve_404[refactorizado] PASSED [ 65%]
+tests/test_comportamiento.py::test_reasignar_a_un_horario_ocupado_devuelve_400[estado-inicial] PASSED [ 67%]
+tests/test_comportamiento.py::test_reasignar_a_un_horario_ocupado_devuelve_400[refactorizado] PASSED [ 69%]
+tests/test_comportamiento.py::test_reasignar_envia_notificacion_con_la_nueva_fecha[estado-inicial] PASSED [ 72%]
+tests/test_comportamiento.py::test_reasignar_envia_notificacion_con_la_nueva_fecha[refactorizado] PASSED [ 74%]
+tests/test_comportamiento.py::test_cancelar_marca_el_turno_como_cancelado[estado-inicial] PASSED [ 76%]
+tests/test_comportamiento.py::test_cancelar_marca_el_turno_como_cancelado[refactorizado] PASSED [ 79%]
+tests/test_comportamiento.py::test_cancelar_turno_inexistente_devuelve_404[estado-inicial] PASSED [ 81%]
+tests/test_comportamiento.py::test_cancelar_turno_inexistente_devuelve_404[refactorizado] PASSED [ 83%]
+tests/test_comportamiento.py::test_listar_devuelve_solo_turnos_pendientes_del_area[estado-inicial] PASSED [ 86%]
+tests/test_comportamiento.py::test_listar_devuelve_solo_turnos_pendientes_del_area[refactorizado] PASSED [ 88%]
+tests/test_comportamiento.py::test_listar_area_sin_turnos_devuelve_lista_vacia[estado-inicial] PASSED [ 90%]
+tests/test_comportamiento.py::test_listar_area_sin_turnos_devuelve_lista_vacia[refactorizado] PASSED [ 93%]
+tests/test_contrato_api.py::test_estado_inicial_recibia_los_datos_como_query_params PASSED [ 95%]
+tests/test_contrato_api.py::test_version_refactorizada_recibe_los_datos_como_json PASSED [ 97%]
+tests/test_contrato_api.py::test_version_refactorizada_valida_los_campos_obligatorios PASSED [100%]
+
+============================== warnings summary ===============================
+venv\Lib\site-packages\fastapi\testclient.py:1
+  D:\Santiago\Documents D\Metodologia de Sistemas II\TPI_metodologia\venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 43 passed, 1 warning in 1.67s ========================
